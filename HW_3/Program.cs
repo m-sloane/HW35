@@ -11,16 +11,19 @@ Console.Write("Input five digit number: ");
 string? number = Console.ReadLine();
 
 void CheckingNumber(string number){
-  if (number[0]==number[4] || number[1]==number[3]){
-    Console.WriteLine($"Your number: {number} - is a palindromic word.");
-  }
-  else Console.WriteLine($"Ваше число: {number} - is not a palindromic word.");
+if (number[0]==number[4] || number[1]==number[3])
+{
+Console.WriteLine($"Your number: {number} - is a palindromic word.");
+}
+else Console.WriteLine($"Ваше число: {number} - is not a palindromic word.");
 }
 
-if (number!.Length == 5){
+if (number!.Length == 5)
+{
   CheckingNumber(number);
 }
 else Console.WriteLine($"Input the right number");
+
 /*
 Задача 21
 
@@ -51,7 +54,6 @@ Math.Pow((z2-z1), 2));
 }
 
 double segmentLength =  Math.Round (Decision(x1, x2, y1, y2, z1, z2), 2 );
-
 Console.WriteLine($"Run length  {segmentLength}");
 
 /*
