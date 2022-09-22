@@ -10,12 +10,16 @@
 Console.Write("Input five digit number: ");
 string? number = Console.ReadLine();
 
-void CheckingNumber(string number){
+void CheckingNumber(string number)
+
+{
+
 if (number[0]==number[4] || number[1]==number[3])
 {
-Console.WriteLine($"Your number: {number} - is a palindromic word.");
+Console.WriteLine($"Your number: {number} is a palindromic word.");
 }
-else Console.WriteLine($"Ваше число: {number} - is not a palindromic word.");
+else Console.WriteLine($"Ваше число: {number} is not a palindromic word.");
+
 }
 
 if (number!.Length == 5)
@@ -48,9 +52,7 @@ Console.Write($"Input coordinate {coorName} of  {pointName}: ");
 double Decision(double x1, double x2, 
 double y1, double y2, 
 double z1, double z2){
-return Math.Sqrt(Math.Pow((x2-x1), 2) + 
-Math.Pow((y2-y1), 2) + 
-Math.Pow((z2-z1), 2));
+return Math.Sqrt(Math.Pow((x2-x1), 2) + Math.Pow((y2-y1), 2) + Math.Pow((z2-z1), 2));
 }
 
 double segmentLength =  Math.Round (Decision(x1, x2, y1, y2, z1, z2), 2 );
