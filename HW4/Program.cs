@@ -25,7 +25,6 @@ Console.WriteLine("A to the power of B is equal to: " + step);
 Console.WriteLine("Input number");
 int i = Convert.ToInt32(Console.ReadLine());
 int sum = 0;
-
 while (i > 0)
 {
 int number = i % 10;
@@ -42,15 +41,14 @@ Console.WriteLine("The sum of all digits is: " + sum);
 
 int [] numbers = new int[8];
 Console.Write("[ ");
-
 for (int i = 0; i < numbers.Length; i++)
  {
-    numbers [i] = new Random().Next(0, 100);
+ numbers [i] = new Random().Next(0, 100);
     Console.Write(", " + Method (i) + " ");
  }
 Console.Write("]");
 
 int Method (int a)
 {
-    return numbers[a];
+return numbers[a];
 }
